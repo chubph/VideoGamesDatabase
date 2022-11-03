@@ -119,3 +119,38 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+use videogames;
+
+insert into genre (id, genre_type)
+values 
+(1, "Stealth"),
+(2, "Action"),
+(3, "Horror"),
+(4, "Racing"),
+(5, "Adventure")
+(6, "Strategy");
+
+
+insert into player (player_name, player_age)
+values 
+("Filippos" , 32),
+("Daniel" , 32),
+("Attila" , 35),
+("Erik" , 36),
+("Helder" , 19);
+
+
+insert into game (game_name, Genre_id)
+values 
+("Metal Gear Solid", 1),
+("Resident Evil", 3),
+("Silent Hill", 3),
+("GTA", 2),
+("Gran Turismo", 4),
+("Need For Speed", 4),
+("Dirt", 4);
+
+
+insert into platform (platform_name, player_id)
+values ("XBOX", 1), ("XBOX", 2) , ("Playstation" ,3),("Playstation" ,4),("Playstation" ,5);
